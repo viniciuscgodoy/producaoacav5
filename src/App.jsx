@@ -98,7 +98,7 @@ const App = () => {
       filtered = filtered.filter(item => item.Descricao.toLowerCase().includes(filters.description.toLowerCase()));
     }
     if (filters.prensa) {
-      filtered = filtered.filter(item => String(item.PRENSA).toLowerCase().includes(filters.prensa.toLowerCase()));
+      filtered = filtered.filter(item => String(item.PRENSA).toLowerCase() === filters.prensa.toLowerCase());
     }
 
     setFilteredData(filtered);
