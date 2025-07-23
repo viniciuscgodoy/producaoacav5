@@ -184,7 +184,7 @@ logger.error = (msg, options) => {
 }
 
 export default defineConfig({
-	base: /producaoacav5, // Adicione esta linha com o nome do seu repositório
+	base: '/producaoacav5', // Adicione esta linha com o nome do seu repositório
 	customLogger: logger,
 	plugins: [
 		react(),
